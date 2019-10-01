@@ -25,6 +25,7 @@ class Vehicle{
 		System.out.println("wheels    :" + wheels + "轮");
 		System.out.println("load      :" + load + "千克");
 	}
+	/* 可以试用super.fun()调用父类的同名函数
 	// 获取轮数函数
 	public int getWheels()
 	{
@@ -34,7 +35,7 @@ class Vehicle{
 	public double getLoad()
 	{
 		return load;
-	}
+	}*/
 }
 
 class Car extends Vehicle
@@ -60,8 +61,9 @@ class Car extends Vehicle
 	public void display()
 	{
 		System.out.println("----------Car----------");
-		System.out.println("wheels    :" + this.getWheels() + "轮");
-		System.out.println("load      :" + this.getLoad() + "千克");
+		//System.out.println("wheels    :" + this.getWheels() + "轮");
+		//System.out.println("load      :" + this.getLoad() + "千克");
+		super.display();
 		System.out.println("passengers:" + passengers + "人");
 		System.out.println("make      :" + make);
 	}
@@ -90,8 +92,9 @@ class Truck extends Vehicle
 	public void display()
 	{
 		System.out.println("----------Truck----------");
-		System.out.println("wheels    :" + this.getWheels() + "轮");
-		System.out.println("load      :" + this.getLoad() + "千克");
+		//System.out.println("wheels    :" + this.getWheels() + "轮");
+		//System.out.println("load      :" + this.getLoad() + "千克");
+		super.display();
 		System.out.println("bridges   :" + bridges + "轴");
 		System.out.println("cargo_tp  :" + cargo_tp);
 	}
